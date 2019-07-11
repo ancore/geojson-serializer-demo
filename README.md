@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dtap-gmbh/geojson-serializer-demo.svg?branch=master)](https://travis-ci.org/dtap-gmbh/geojson-serializer-demo)
+
 # geojson-serializer-demo
 
 An example Spring Boot project that demonstrates the usage of [geojson-serializer](https://github.com/dtap-gmbh/geojson-serializer) to create [GeoJSON](https://tools.ietf.org/html/rfc7946) with a RestController.
