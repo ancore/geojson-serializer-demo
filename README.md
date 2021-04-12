@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dtap-gmbh/geojson-serializer-demo.svg?branch=master)](https://travis-ci.org/dtap-gmbh/geojson-serializer-demo)
+[![Build Status](https://github.com/dtap-gmbh/geojson-serializer-demo/actions/workflows/maven.yml/badge.svg)](https://github.com/dtap-gmbh/geojson-serializer-demo) 
 
 # geojson-serializer-demo
 
