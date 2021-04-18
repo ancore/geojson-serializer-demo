@@ -1,3 +1,19 @@
+/*
+ * Copyright 2019 DTAP GmbH
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package gmbh.dtap.geojson.serializer.place;
 
 import gmbh.dtap.geojson.annotation.GeoJson;
@@ -27,15 +43,14 @@ import static org.springframework.http.ResponseEntity.ok;
 @RestController
 public class PlaceController {
 
-   private PlaceRepository placeRepository;
+   private final PlaceRepository placeRepository;
 
    public PlaceController(PlaceRepository placeRepository) {
       this.placeRepository = placeRepository;
    }
 
    /**
-    * Returns the available {@link Places}. The class is annotated with
-    * {@code @GeoJson(type = GeoJsonType.FEATURE_COLLECTION)}.
+    * Returns the available {@link Places}. The class is annotated with {@code @GeoJson(type = GeoJsonType.FEATURE_COLLECTION)}.
     *
     * @return the {@link ResponseEntity} with places
     * @since 0.1.0
@@ -48,8 +63,7 @@ public class PlaceController {
    }
 
    /**
-    * Returns one {@link Place} by ID. The class is annotated with
-    * {@code @GeoJson(type = GeoJsonType.FEATURE)}.
+    * Returns one {@link Place} by ID. The class is annotated with {@code @GeoJson(type = GeoJsonType.FEATURE)}.
     *
     * @param id the ID
     * @return the {@link ResponseEntity} with place, or <tt>204 no content</tt> if not found
