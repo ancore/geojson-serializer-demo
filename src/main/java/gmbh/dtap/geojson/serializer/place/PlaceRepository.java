@@ -22,8 +22,6 @@ import org.springframework.stereotype.Repository;
 
 /**
  * The JPA repository for entity {@link Place}.
- *
- * @since 0.1.0
  */
 @Repository
 public interface PlaceRepository extends JpaRepository<Place, Long> {
