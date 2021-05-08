@@ -26,20 +26,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import static org.springframework.http.ResponseEntity.noContent;
+import static org.springframework.http.ResponseEntity.notFound;
 import static org.springframework.http.ResponseEntity.ok;
 
 /**
  * A REST controller that provides HTTP access to the {@link PlaceRepository}.
  * <p>
- * To create a response body with GeoJSON, a {@link GeoJson @GeoJson}
- * annotated class is sufficient.
+ * To create a response body with GeoJSON, a {@link GeoJson @GeoJson} annotated class
+ * is sufficient.
  * <p>
- * This example uses two annotated classes, {@link Place} as <em>Feature</em> and {@link Places} as the
- * <em>FeatureCollection</em>.
- *
- * @since 0.1.0
- */
+ * This example uses two annotated classes, {@link Place} as <em>Feature</em> and
+ * {@link Places} as the <em>FeatureCollection</em>.
+ **/
 @RestController
 public class PlaceController {
 
@@ -53,7 +51,6 @@ public class PlaceController {
     * Returns the available {@link Places}. The class is annotated with {@code @GeoJson(type = GeoJsonType.FEATURE_COLLECTION)}.
     *
     * @return the {@link ResponseEntity} with places
-    * @since 0.1.0
     */
    @GetMapping("/api/places")
    public ResponseEntity<Places> findAll() {
@@ -66,13 +63,12 @@ public class PlaceController {
     * Returns one {@link Place} by ID. The class is annotated with {@code @GeoJson(type = GeoJsonType.FEATURE)}.
     *
     * @param id the ID
-    * @return the {@link ResponseEntity} with place, or <tt>204 no content</tt> if not found
-    * @since 0.1.0
+    * @return the {@link ResponseEntity} with place, or HTTP status 404 if not found
     */
    @GetMapping("/api/places/{id}")
    public ResponseEntity<Place> findById(@PathVariable("id") Long id) {
       return placeRepository.findById(id)
             .map(ResponseEntity::ok)
-            .orElse(noContent().build());
+            .orElse(notFound().build());
    }
 }

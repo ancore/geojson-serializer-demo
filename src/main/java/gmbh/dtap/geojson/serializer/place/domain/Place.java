@@ -62,6 +62,17 @@ public class Place {
    @GeoJsonProperty private String description;
    private String location;
 
+   public Place() {
+      // JPA
+   }
+
+   public Place(Long id, String name, String description, String location) {
+      this.id = id;
+      this.name = name;
+      this.description = description;
+      this.location = location;
+   }
+
    /**
     * Parses the WKT content and return the Geometry object.
     * <p>

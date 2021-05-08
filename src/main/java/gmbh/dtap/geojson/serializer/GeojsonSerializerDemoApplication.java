@@ -21,9 +21,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
- * Spring Boot Application
+ * Spring Boot Application demonstrating the <em>geojson-serializer</em> library.
  *
- * @since 0.1.0
+ * @see <a href="https://github.com/dtap-gmbh/geojson-serializer">geojson-serializer</a>
  */
 @EnableJpaRepositories
 @SpringBootApplication
