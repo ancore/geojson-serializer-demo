@@ -10,13 +10,13 @@
         <relativePath/>
     </parent>
 
-    <groupId>gmbh.dtap</groupId>
+    <groupId>ch.cordsen</groupId>
     <artifactId>geojson-serializer-demo</artifactId>
-    <version>0.3.0-SNAPSHOT</version>
+    <version>0.4.0-SNAPSHOT</version>
 
     <name>${groupId}:${artifactId}</name>
     <description>A demo of the geojson-serializer with Spring Boot</description>
-    <url>https://github.com/dtap-gmbh/geojson-serializer</url>
+    <url>https://github.com/ancore/geojson-serializer</url>
 
     <licenses>
         <license>
@@ -28,17 +28,14 @@
     <developers>
         <developer>
             <name>Andreas Cordsen</name>
-            <email>andreas.cordsen@dtap.gmbh</email>
-            <organization>DTAP GmbH</organization>
-            <organizationUrl>https://dtap.gmbh</organizationUrl>
+            <email>andreas@cordsen.ch</email>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git@github.com:dtap-gmbh/geojson-serializer.git</connection>
-        <url>scm:git@github.com:dtap-gmbh/geojson-serializer.git</url>
-        <developerConnection>scm:git:git@github.com:dtap-gmbh/geojson-serializer.git</developerConnection>
-        <tag>HEAD</tag>
+        <connection>scm:git@github.com:ancore/geojson-serializer-demo.git</connection>
+        <url>scm:git@github.com:ancore/geojson-serializer-demo.git</url>
+        <developerConnection>scm:git:git@github.com:ancore/geojson-serializer-demo.git</developerConnection>
     </scm>
 
     <properties>
@@ -54,9 +51,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>gmbh.dtap</groupId>
+            <groupId>ch.cordsen</groupId>
             <artifactId>geojson-serializer</artifactId>
-            <version>0.5.5</version>
+            <version>0.6.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>

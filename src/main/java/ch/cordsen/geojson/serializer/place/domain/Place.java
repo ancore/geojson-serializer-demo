@@ -1,28 +1,12 @@
-/*
- * Copyright 2019 DTAP GmbH
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-package gmbh.dtap.geojson.serializer.place.domain;
+package ch.cordsen.geojson.serializer.place.domain;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import gmbh.dtap.geojson.annotation.GeoJson;
-import gmbh.dtap.geojson.annotation.GeoJsonGeometry;
-import gmbh.dtap.geojson.annotation.GeoJsonId;
-import gmbh.dtap.geojson.annotation.GeoJsonProperty;
-import gmbh.dtap.geojson.serializer.GeoJsonSerializer;
-import gmbh.dtap.geojson.serializer.GeoJsonType;
+import ch.cordsen.geojson.annotation.GeoJson;
+import ch.cordsen.geojson.annotation.GeoJsonGeometry;
+import ch.cordsen.geojson.annotation.GeoJsonId;
+import ch.cordsen.geojson.annotation.GeoJsonProperty;
+import ch.cordsen.geojson.serializer.GeoJsonSerializer;
+import ch.cordsen.geojson.serializer.GeoJsonType;
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.GeometryFactory;
 import org.locationtech.jts.geom.Point;

@@ -1,8 +1,8 @@
-[![Build Status](https://github.com/dtap-gmbh/geojson-serializer-demo/actions/workflows/maven.yml/badge.svg)](https://github.com/dtap-gmbh/geojson-serializer-demo)
+[![Build Status](https://github.com/ancore/geojson-serializer-demo/actions/workflows/maven.yml/badge.svg)](https://github.com/ancore/geojson-serializer-demo)
 
 # geojson-serializer-demo
 
-An example Spring Boot project that demonstrates the usage of [geojson-serializer](https://github.com/dtap-gmbh/geojson-serializer) to
+An example Spring Boot project that demonstrates the usage of [geojson-serializer](https://github.com/ancore/geojson-serializer) to
 create [GeoJSON](https://tools.ietf.org/html/rfc7946) from a PoJo with a `RestController`.
 
 ## REST Calls
@@ -89,6 +89,6 @@ http://localhost:8080/api/places/2
 
 ## Credits
 
-Copyright (c) 2019 DTAP GmbH
+Copyright (c) 2019 Andreas Cordsen
 
 Please refer to the LICENSE file for details.
