@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/ancore/geojson-serializer-demo/actions/workflows/maven.yml/badge.svg)](https://github.com/ancore/geojson-serializer-demo)
+[![Build Status](https://github.com/ancore/geojson-serializer-demo/actions/workflows/maven.yml/badge.svg)](https://github.com/ancore/geojson-serializer-demo/actions/workflows/maven.yml)
 
 # geojson-serializer-demo
 
